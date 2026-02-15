@@ -1,6 +1,7 @@
 {
     "rust-analyzer.linkedProjects": [
         "./01_b79e_Intro/Solution/Cargo.toml",
-        "./02_3762_Variable/Solution/Cargo.toml"
+        "./02_3762_Variable/Solution/Cargo.toml",
+        "./04_6611_Decision/Solution/Cargo.toml"
     ]
 }
