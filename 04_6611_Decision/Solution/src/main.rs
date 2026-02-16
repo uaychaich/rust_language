@@ -2,20 +2,35 @@ fn main() {
     let a1:i32 = 5;
 
     if a1 <5 {
-        print!("a1 is less than 5: {}\n",a1)
+        println!("a1 is less than 5: {}",a1);
+        println!("naja");
     }else if a1==5{
-        print!("a1 is equal 5: {}\n",a1)
+        println!("a1 is equal 5: {}",a1);
+        println!("kiki");
     }else{
-        print!("a1 is more than 5: {}\n",a1)
+        println!("a1 is more than 5: {}",a1);
+        println!("kuku");
     }
-
+    println!("///////////////////////////////////////////////");
     /////////////////////////////////////////////////////////
-    
     let a2 = if a1==5 {"Five"}else{"Else"};
     print!("a2={}\n",a2);
-    
+    println!("///////////////////////////////////////////////");
     /////////////////////////////////////////////////////////
-    
-    let a3:i32 =5;
-    
+    let a3:i32 =10;
+    match a3 {
+        0 => {println!("a3,It's zero");println!("naja");},
+        1 | 3 | 5 | 7 | 9 => println!("a3,it's odd: {}",a3),
+        2 | 4 | 6 | 8 => println!("a3,it's even: {}",a3),
+        10..20 => println!("a3,It's >=10 and < 20: {}", a3),
+        21..=30 => println!("a3,It's >=21 and <= 30: {}", a3),
+        _ => println!("a3,it's else: {}",a3)
+    }
+    println!("///////////////////////////////////////////////");
+    /////////////////////////////////////////////////////////
+    let a41:i32 = 10;
+    let a42 = match a41{10=>"Ten", 20=>"Twenty",_ => "Else"};
+    println!("a41={} | a42={}",a41,a42);
+    println!("///////////////////////////////////////////////");
+    /////////////////////////////////////////////////////////
 }
