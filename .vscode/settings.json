@@ -4,6 +4,8 @@
         "./02_3762_Variable/Solution/Cargo.toml",
         "./03_8634_Operator/Solution/Cargo.toml",
         "./04_6611_Decision/Solution/Cargo.toml",
-        "./05_1f5b_Loop/Solution/Cargo.toml"
+        "./05_1f5b_Loop/Solution/Cargo.toml",
+        "./06_f8ef_Function/Solution/Cargo.toml",
+        "./07_c97a_Enum/Solution/Cargo.toml"
     ]
 }
