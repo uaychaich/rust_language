@@ -6,6 +6,9 @@
         "./04_6611_Decision/Solution/Cargo.toml",
         "./05_1f5b_Loop/Solution/Cargo.toml",
         "./06_f8ef_Function/Solution/Cargo.toml",
-        "./07_c97a_Enum/Solution/Cargo.toml"
+        "./07_c97a_Enum/Solution/Cargo.toml",
+        "./08_3d8f_Struct/Solution/Cargo.toml",
+        "./09_fa7d_Pointer/Solution/Cargo.toml",
+        "./11_be3c_SliceVector/Solution/Cargo.toml"
     ]
 }
