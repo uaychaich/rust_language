@@ -10,6 +10,9 @@
         "./08_3d8f_Struct/Solution/Cargo.toml",
         "./09_fa7d_Pointer/Solution/Cargo.toml",
         "./10_7238_Ownership/Solution/Cargo.toml",
-        "./11_be3c_SliceVector/Solution/Cargo.toml"
+        "./11_a842_Generic/Solution/Cargo.toml",
+        "./12_be3c_SliceVector/Solution/Cargo.toml",
+        "./13_17f0_Method/Solution/Cargo.toml",
+        "./14_4b58_Trait/Solution/Cargo.toml"
     ]
 }
