@@ -1,4 +1,5 @@
 mod uayfunc;
+use std::panic;
 fn main() {
     // let a01 = [10,20,30];
     // println!("The seventh element is: {}", a01[6]);
@@ -35,5 +36,15 @@ fn main() {
     //     println!("Your age is: {}", age);
     // } else {
     //     println!("Error is here: {}", res.unwrap_err());
+    // }
+    //////////////////////////////////////////////////
+    // let result = panic::catch_unwind(|| {
+    //     println!("Attempting risky operation...");
+    //     panic!("Something went wrong!");
+    // });
+
+    // match result {
+    //     Ok(_) => println!("All good!"),
+    //     Err(_) => println!("Caught a panic!"),
     // }
 }
