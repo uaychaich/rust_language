@@ -1,3 +1,5 @@
+use std::option;
+
 mod uaymacro;
 fn main() {
     uaymacro::uay1!();
@@ -32,5 +34,18 @@ fn main() {
     uayvar2 = 3.14159;
     println!("uayvar2 = {}", uayvar2);
     //////////////////////////////////////////////
-    
+    uaymacro::uay8!(uaytime,::std::time::SystemTime);
+    uaytime = ::std::time::SystemTime::now();
+    println!("uaytime = {:?}", uaytime);
+    //////////////////////////////////////////////
+    let some_value = Some(53);
+    uaymacro::uay9!(some_value, Some(x));
+    //////////////////////////////////////////////
+    uaymacro::uay10!(
+        println!("uay10! macro called with a statement")
+    );
+    //////////////////////////////////////////////
+    uaymacro::uay11!(let);
+    uaymacro::uay12!(let x =42);
+    //////////////////////////////////////////////
 }
