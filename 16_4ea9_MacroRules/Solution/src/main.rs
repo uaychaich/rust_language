@@ -48,4 +48,6 @@ fn main() {
     uaymacro::uay11!(let);
     uaymacro::uay12!(let x =42);
     //////////////////////////////////////////////
+    uaymacro::uay13!(deprecated);
+    uay_meta_function();
 }

@@ -65,6 +65,13 @@ macro_rules! uay12 {
     ($($x:tt)*) => {println!("uay12! macro called with token tree: {}", stringify!($($x)*))};
 }
 
+#[macro_export]
+macro_rules! uay13 {
+    ($x:meta) => {#[$x] fn uay_meta_function() {
+        println!("uay13! macro called with meta item: {}", stringify!($x));
+    }};
+}
+
 pub(crate) use uay1;
 pub(crate) use uay2;
 pub(crate) use uay3;
@@ -77,3 +84,4 @@ pub(crate) use uay9;
 pub(crate) use uay10;
 pub(crate) use uay11;
 pub(crate) use uay12;
+pub(crate) use uay13;
