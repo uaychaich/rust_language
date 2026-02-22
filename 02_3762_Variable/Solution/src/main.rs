@@ -26,4 +26,8 @@ fn main() {
     println!("{} {} {}",a1[0],a1[1],a1[2]);
     let s1:&str ="Uaychai Naja";
     println!("{s1}");
+
+    type Age = u8;
+    let my_age:Age = 30;
+    println!("My age is {my_age}");
 }
