@@ -21,5 +21,6 @@
         "./19_02a0_PackageCrateModule/Solution/OnePackageMixCrate/MixCrate/Cargo.toml",
         "./19_02a0_PackageCrateModule/Solution/TwoPackageTwoCrate/LibraryCrate/Cargo.toml",
         "./19_02a0_PackageCrateModule/Solution/TwoPackageTwoCrate/BinaryCrate/Cargo.toml",
+        "./20_ac03_ProceduralMacro/Solution/Cargo.toml"
     ]   
 }
