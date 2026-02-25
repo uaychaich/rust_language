@@ -1,4 +1,4 @@
-use crate::uaytrait::ShapeTrait;
+use crate::uaytrait::{ShapeTrait, animals, live, plants};
 use std::any::type_name;
 
 pub struct Circle {
@@ -29,5 +29,38 @@ impl ShapeTrait for Rectangle {
     }
     fn typename(&self) -> &'static str {
         type_name::<Rectangle>()
+    }
+}
+/////////////////////////////////////////////////////////
+pub struct Dog {
+    pub name: String,
+    pub number_of_legs: u8,
+}
+pub struct Rose {
+    pub name: String,
+    pub height: f64,
+}
+
+impl live for Dog {
+    fn get_name(&self) -> String {
+        self.name.clone()
+    }
+}
+
+impl animals for Dog {
+    fn get_number_of_legs(&self) -> u8 {
+        self.number_of_legs
+    }
+}
+
+impl live for Rose {
+    fn get_name(&self) -> String {
+        self.name.clone()
+    }
+}
+
+impl plants for Rose {
+    fn get_height(&self) -> f64 {
+        self.height
     }
 }
