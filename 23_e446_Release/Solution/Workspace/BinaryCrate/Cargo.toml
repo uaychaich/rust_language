@@ -1,0 +1,16 @@
+[package]
+name = "BinaryCrate"
+version = "0.2.0"
+edition = "2024"
+description = "A fun game where you guess what number the computer has chosen."
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+LibraryCrate = { path = "../LibraryCrate" }
+
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
