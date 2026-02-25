@@ -1,4 +1,4 @@
-use crate::uaytrait::{ShapeTrait, animals, live, plants};
+use crate::uaytrait::{ShapeTrait, TraitA, animals, live, plants};
 use std::any::type_name;
 
 pub struct Circle {
@@ -64,3 +64,16 @@ impl plants for Rose {
         self.height
     }
 }
+/////////////////////////////////////////////////////////
+pub struct StructA;
+impl TraitA for StructA {
+    type Item1 = i32;
+    type Item2 = String;
+    fn method1(&self) -> Self::Item1 {
+        42
+    }
+    fn method2(&self) -> Self::Item2 {
+        "Hello from StructA".into()
+    }
+}
+/////////////////////////////////////////////////////////

@@ -1,6 +1,8 @@
 mod uayfunc;
 use std::panic;
-fn main() {
+use std::error::Error;
+fn main()  //-> Result<(), Box<dyn Error>> 
+{
     // let a01 = [10,20,30];
     // println!("The seventh element is: {}", a01[6]);
     //////////////////////////////////////////////////
@@ -37,6 +39,11 @@ fn main() {
     // } else {
     //     println!("Error is here: {}", res.unwrap_err());
     // }
+    //////////////////////////////////////////////////
+    // let birthyear = 2000;
+    // let age = uayfunc::uayfunc2(birthyear)?;
+    // println!("Your age is: {}", age);
+    // Ok(())
     //////////////////////////////////////////////////
     // let result = panic::catch_unwind(|| {
     //     println!("Attempting risky operation...");

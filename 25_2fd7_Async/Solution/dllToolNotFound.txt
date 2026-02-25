@@ -1,0 +1,8 @@
+https://users.rust-lang.org/t/error-dlltool-dlltool-exe-not-found/130728/8
+
+Error: dlltool ‘dlltool.exe’ not found
+1. I deleted my MSYS2 installation in the directory C:\msys64 (The directory name isn't msys2 - I didn't know that before...) (Of course, you need to know what you had installed before if you do this and want to use it later on)
+2. I reinstalled MSYS2 using the installer (select "Open MSYS2 (shell)" to proceed faster)
+3. I installed the MinGW toolchain with the command pacman -S mingw-w64-x86_64-toolchain
+4. I added the ~\msys64\mingw64\bin directory to the PATH
+5. It should work! (test it by running cargo check while in the directory of a project with at least one dependency (You don't need to use it in your code))
